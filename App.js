@@ -15,9 +15,10 @@ class SoftwareConstrunction extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name:"Muhammad Hasnain",
+      name:"MUAHAMMAD ANAS",
     Department:"UIIT",
-   Degree:"BS Software engineering"
+   Degree:"BS Software engineering",
+   arid:"19-arid-1248"
     }
   }
 
@@ -26,48 +27,20 @@ class SoftwareConstrunction extends React.Component {
     
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
-      <Image source={require('./assets/logo.svg')} 
-      style={{width:200,height:200,marginLeft:100,marginTop:30}}
+      <Text style={styles.hiText}>{"PMAS UAAR"}</Text>
+      <Image source={require('./anas.jpg')} 
+      style={{width:200,height:300,marginLeft:100,marginTop:30}}
       />
       <View style={styles.content}>
         <View style={styles.textWrapper}>
         
           <Text style={styles.hiText}>Name : {this.state.name}</Text>
-          <Text style={styles.userText}>Department : {this.state.Department}</Text>
-          <Text style={styles.userText}>Degree : {this.state.Degree} </Text>
+          <Text style={styles.hiText}>Arid : {this.state.arid}</Text>
+          <Text style={styles.hiText}>Department : {this.state.Department}</Text>
+          <Text style={styles.hiText}>Degree : {this.state.Degree} </Text>
         </View>
 
-        <View style={styles.form}>
-         
-
-         
-          <TextInput
-            style={styles.inputfield}
-          
-            autoFocus={true}
-            placeholder="Enter Your Name"
-            placeholderTextColor="#929292"
-            onChangeText={name=>this.setState({name})}
-          />
-          <TextInput
-            style={styles.inputfield}
         
-            autoFocus={true}
-            placeholder="Enter your Department"
-            placeholderTextColor="#929292"
-            onChangeText={Department=>this.setState({Department})} 
-          />
-          <TextInput
-            style={styles.inputfield}
-          
-            autoFocus={true}
-            placeholder="Enter Your degree"
-            placeholderTextColor="#929292"
-            onChangeText={Degree=>this.setState({Degree })}
-          />
-          
-          
-        </View>
 
       
       </View>
